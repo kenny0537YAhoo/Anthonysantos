@@ -1,4 +1,3 @@
-/* Removes default browser margins/padding */
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +7,8 @@
 html, body {
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    background-color: black; /* Adds black bars if image aspect ratio differs */
+    background-color: black; /* Matches the Photos app background */
+    overflow: hidden; /* Stops the page from scrolling/bouncing */
 }
 
 .photo-display {
@@ -23,6 +22,6 @@ html, body {
 .photo-display img {
     width: 100%;
     height: 100%;
-    /* 'contain' forces the whole image to show within the box */
-    object-fit: contain;
+    /* This makes the image fit inside the screen while keeping the aspect ratio */
+    object-fit: contain; 
 }
